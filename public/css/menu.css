@@ -1,0 +1,18 @@
+.my_ol {
+border:solid;
+border-width:1px;
+background-color: #F8F8EF;
+border-color:#CCCCCC;
+padding-top:5px;
+padding-bottom:5px
+}
+#gotoTop{
+position:fixed;
+margin:auto;
+right:0px;
+bottom:0px;
+border:0px;
+cursor:pointer;
+z-index: 99;
+display:none;
+}

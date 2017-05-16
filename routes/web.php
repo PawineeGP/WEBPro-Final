@@ -13,28 +13,8 @@
 
 Route::get('/', function () {
     return view('welcome');
-
-});
-
-Route::get('/test/{$name}',function ($name){
-  $data['user']=$name;
-  // $data['user']='Gogo';
-  // $data['age']=18;
-  // $data['users']=['Gigie','gogo','jub'];
-
-  // return view('test',compact('data','age'));
-  return view('test',$data);
-});
-
-Route::get('/register',function (){
-  return view('register');
-});
-
-Route::get('/abount', function () {
-    return view('abount');
-
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/home', 'HomeController@index')->name('home');
